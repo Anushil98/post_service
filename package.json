@@ -1,0 +1,30 @@
+{
+  "name": "post_service",
+  "version": "1.0.0",
+  "description": "This is a post service which handles all events based on posts. Events can be like create post, update post, delete post and get posts",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node -r dotenv/config index.js",
+    "receive": "nodemon --experimental-modules --es-module-specifier-resolution=node -r dotenv/config  mqtt_broker/receiver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anushil98/post_service.git"
+  },
+  "author": "Anushil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anushil98/post_service/issues"
+  },
+  "homepage": "https://github.com/Anushil98/post_service#readme",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.2",
+    "nodemon": "^2.0.15"
+  }
+}
